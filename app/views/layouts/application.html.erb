@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ShoppingApp</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+  <%= stylesheet_link_tag "Mystyle.css" %> 
+</head>
+<body>
+
+<div id="header">				
+<%= image_tag 'shopping.jpg' %>
+<h3>Name : Ammar Tariq Khan</h3>
+<h3>Student No: 2824199</h3>
+
+</div>
+<div class= nav>
+<nav>
+   <ul>
+    <li><%= link_to "New Item", 'additem' %></li><br/>
+    
+   </ul>
+  </nav>
+</div>
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>
